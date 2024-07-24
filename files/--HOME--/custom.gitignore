@@ -34,6 +34,7 @@ __pycache__
 .psqlrc
 .pub-cache/
 .pylint.d/
+k8s-objects/
 .rd/
 .swiftpm/
 .talisman/bin/
@@ -151,6 +152,7 @@ __pycache__
 /.packer.d/
 /.parallel
 /.passenger/
+/.pgadmin/
 /.pki
 /.pnpm-state/pnpm-state.json
 /.pnpm-store/
@@ -174,6 +176,7 @@ __pycache__
 /.terminfo/
 /.testcontainers.properties
 /.thumbnails
+/.tig_history
 /.tldrc/
 /.tmux
 /.tooling/gradle/checksums/
@@ -183,6 +186,7 @@ __pycache__
 /.v8flags*
 /.vagrant.d
 /.viminfo
+/.vim/bundle/vim-better-whitespace
 /.vpython*
 /.vscod*
 /.wget-hsts
@@ -284,6 +288,7 @@ tmp/
 /.tcshrc
 /.vim/autoload/plug.vim
 /.vimrc
+/.yarn
 /.zlogin
 /.zshenv
 /.zshrc
