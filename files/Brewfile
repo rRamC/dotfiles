@@ -22,18 +22,21 @@ is_arm = Hardware::CPU.arm?
 tap 'homebrew/services'
 tap 'romkatv/powerlevel10k'
 
+brew 'awscli'
 brew 'bash'
 brew 'bat'
 brew 'btop'
 brew 'curl'
 brew 'diff-so-fancy'
 brew 'direnv'
+brew 'docker-compose'
 brew 'eza'
 brew 'git-extras'
 brew 'git-gui'
 brew 'git-tools'
 brew 'git'
 brew 'jq'
+brew 'kubernetes-cli'
 brew 'less'
 brew 'mise'
 brew 'moreutils'
@@ -43,6 +46,7 @@ brew 'prettyping'
 brew 'ripgrep'
 brew 'shellcheck'
 brew 'syncthing'
+brew 'tig'
 brew 'tldr'
 brew 'vim'
 brew 'watch'
@@ -52,27 +56,29 @@ brew 'zsh'
 
 # ----------------------------------------------------------------------------------------------------------
 brew 'mas'
-mas 'iBar-Menubar icon control tool', id: 6443843900
+# mas 'iBar-Menubar icon control tool', id: 6443843900
 # mas 'Command X', id: 6448461551
 
 # ----------------------------------------------------------------------------------------------------------
 cask 'aldente'
 cask 'appcleaner'
 cask 'arc'
+cask 'android-platform-tools'
 cask 'brave-browser@nightly'
 cask 'clocker'
 cask 'cloudflare-warp'
+cask 'dbeaver-community'
+cask 'ferdium'
 cask 'firefox@nightly' #, greedy: true
 cask 'font-meslo-lg-nerd-font'
+cask 'google-chrome'
 cask 'iterm2'
 cask 'itsycal'
+cask 'jetbrains-toolbox'
 cask 'keepassxc@beta'
-cask 'keepingyouawake'
 cask 'keybase'
 cask 'libreoffice'
-cask 'microsoft-remote-desktop'
 cask 'monolingual'
-cask 'notunes'
 cask 'ollama', restart_service: :changed
 cask 'protonvpn'
 cask 'rancher'
@@ -80,6 +86,8 @@ cask 'raycast'
 cask 'silicon' if is_arm
 cask 'stats'
 cask 'the-unarchiver'
+cask 'thunderbird@daily' # Try it out
+cask 'visual-studio-code'
 cask 'vscodium@insiders'   # TODO: Doesn't handle 'Remote Containers' and GH-based auto-syncing when comparing to VSCode
 cask 'zoom'
 
@@ -169,12 +177,18 @@ end
 
 # ---- casks
 # cask 'dbeaver-community'
+# cask 'dupeguru'
+# cask 'git-credential-manager'  # https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git
 # cask 'intellij-idea-ce'
 # cask 'kdiff3'
+# cask 'keepingyouawake'
 # cask 'keycastr'
 # cask 'licecap'
 # cask 'lulu'
 # cask 'netspot'
+# cask 'microsoft-remote-desktop'
+# cask 'microsoft-teams'
+# cask 'notunes'
 # cask 'ngrok'
 # cask 'onyx'  # Commented out since I'm on the beta version of macos
 # cask 'tempbox'
