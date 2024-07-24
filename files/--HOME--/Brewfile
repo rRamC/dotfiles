@@ -58,29 +58,39 @@ cask 'keybase'
 return true if is_base_install
 
 # formulae pulled in for advanced configs (these are optional, but still recommended)
+brew 'awscli'
 brew 'bat'
 brew 'btop'
+brew 'docker-compose'
 brew 'git-gui'
 brew 'jq'
+brew 'kubernetes-cli'
 brew 'moreutils'
 brew 'ncdu'
 brew 'prettyping'
 brew 'ripgrep'
 brew 'syncthing'
+brew 'tig'
+brew 'tmux'
 brew 'tldr'
 
 cask 'aldente'
+cask 'android-platform-tools'
 cask 'appcleaner'
 cask 'brave-browser'
 cask 'clocker'
+cask 'cloudflare-warp'
+cask 'dbeaver-community'
+cask 'ferdium'
 cask 'firefox@nightly' #, greedy: true
+cask 'google-chrome'
+cask 'itsycal'
+cask 'jetbrains-toolbox'
 cask 'jordanbaird-ice'
 cask 'keepassxc@beta'
-cask 'keepingyouawake'
 cask 'keycastr'
 cask 'keyclu' if is_arm
 cask 'monolingual'
-cask 'notunes'
 cask 'ollama', restart_service: :changed
 cask 'onlyoffice'
 cask 'onyx'
@@ -90,6 +100,7 @@ cask 'raycast'
 cask 'silicon' if is_arm
 cask 'stats'
 cask 'the-unarchiver'
+cask 'thunderbird@daily' # Try it out
 cask 'vscodium@insiders'   # TODO: Doesn't handle 'Remote Containers' and GH-based auto-syncing when compared to VSCode
 cask 'zen-browser@twilight'
 cask 'zoom'
@@ -167,6 +178,7 @@ brew 'mercurial'
 
 # ---- general utilities
 # brew 'fzy'
+# brew 'gradle'
 # brew 'gradle-completion'
 # brew 'gs'   # used for compressing PDFs
 # brew 'libressl', link: true
@@ -179,15 +191,18 @@ brew 'mercurial'
 # ---- casks
 # cask 'cloudflare-warp'
 # cask 'dbeaver-community'
+# cask 'dupeguru'
 # cask 'ghostty'
 # cask 'git-credential-manager'   # https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git
 # cask 'intellij-idea-ce'
 # cask 'kdiff3'
+# cask 'keepingyouawake'
 # cask 'licecap'
 # cask 'lulu'
 # cask 'microsoft-remote-desktop'
 # cask 'microsoft-teams'
 # cask 'netspot'
 # cask 'ngrok'
+# cask 'notunes'
 # cask 'tempbox'
 # cask 'virtualbox'
