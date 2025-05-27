@@ -59,25 +59,35 @@ cask 'keybase', postinstall: "\"${HOME}/.dotfiles/scripts/setup-login-item.sh\" 
 return 0 if is_base_install
 
 # formulae pulled in for advanced configs (these are optional, but still recommended)
+brew 'awscli'
 brew 'bat'
 brew 'btop'
+brew 'docker-compose'
 brew 'git-gui'
 brew 'jq'
+brew 'kubernetes-cli'
 brew 'moreutils'
 brew 'ncdu'
 brew 'prettyping'
 brew 'ripgrep'
 brew 'syncthing'
+brew 'tig'
 brew 'tldr'
+brew 'uv'
 
 cask 'aldente', postinstall: "\"${HOME}/.dotfiles/scripts/setup-login-item.sh\" 'AlDente'"
+cask 'android-platform-tools'
 cask 'boring-notch', postinstall: "\"${HOME}/.dotfiles/scripts/setup-login-item.sh\" 'boringNotch'" if OS::Mac::version >= 14
 cask 'brave-browser'
 cask 'clocker', postinstall: "\"${HOME}/.dotfiles/scripts/setup-login-item.sh\" 'Clocker'"
+cask 'ferdium'
 cask 'firefox@nightly' #, greedy: true
 cask 'fliqlo'
-cask 'google-chrome@beta'
-cask 'jordanbaird-ice@beta', postinstall: "\"${HOME}/.dotfiles/scripts/setup-login-item.sh\" 'Ice'" if OS::Mac::version >= 14
+cask 'floorp'
+cask 'google-chrome'
+cask 'itsycal'
+cask 'jetbrains-toolbox'
+cask 'jordanbaird-ice', postinstall: "\"${HOME}/.dotfiles/scripts/setup-login-item.sh\" 'Ice'" if OS::Mac::version >= 14
 cask 'keepassxc@beta'
 cask 'keycastr'
 cask 'keyclu' if is_arm
@@ -94,7 +104,7 @@ cask 'zen@twilight'
 cask 'zoom'
 
 brew 'mas'
-mas 'PDFgear', id: 6469021132
+# mas 'PDFgear', id: 6469021132
 
 # VSCode extensions
 # Note: I don't want brew to silently install VS Code (which is what it does currently if the following lines are present but it doesn't find the executable 'code'!)
@@ -172,10 +182,11 @@ brew 'sccache'
 
 # ---- tmux utilities
 # brew 'reattach-to-user-namespace' # Needed if using tmux (to be able to access the macos clipboard from within tmux)
-# brew 'tmux'
+brew 'tmux'
 
 # ---- general utilities
 # brew 'fzy'
+# brew 'gradle'
 # brew 'gradle-completion'
 # brew 'gs'   # used for compressing PDFs
 # brew 'libressl', link: true
@@ -186,18 +197,20 @@ brew 'sccache'
 # brew 'wifi-password'
 
 # ---- casks
-# cask 'cloudflare-warp'
-# cask 'dbeaver-community'
+cask 'cloudflare-warp'
+cask 'dbeaver-community'
+# cask 'dupeguru'
 # cask 'ghostty'
 # cask 'git-credential-manager'   # https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git
 # cask 'intellij-idea-ce'
 # cask 'kdiff3'
 # cask 'knockknock'
 # cask 'floorp' # Doesn't have keyboard shortcuts to switch across workspaces
+# cask 'keepingyouawake'
 # cask 'licecap'
 # cask 'lulu'
 # cask 'microsoft-remote-desktop'
-# cask 'microsoft-teams'
+cask 'microsoft-teams'
 # cask 'monolingual'
 # cask 'netspot'
 # cask 'ngrok'
