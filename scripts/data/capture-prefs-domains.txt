@@ -263,6 +263,7 @@ com.google.Chrome.canary
 com.googlecode.iterm2
 com.googlecode.iterm2.private
 com.googlecode.munki.ManagedSoftwareCenter
+com.jetbrains.intellij
 com.jordanbaird.Ice
 com.lowtechguys.ZoomHider
 com.macpaw.site.theunarchiver
@@ -288,6 +289,9 @@ eu.exelban.Stats
 familycircled
 io.github.keycastr
 io.rancherdesktop.app
+jetbrains.iu.251
+jetbrains.iu.csat
+jetbrains.jetprofile.asset
 keybase.Electron
 loginwindow
 mbuseragent
@@ -296,6 +300,7 @@ menu.nomad.DEPNotify
 net.sourceforge.Monolingual
 NSGlobalDomain
 org.cups.PrintingPrefs
+org.jkiss.dbeaver.core.product
 org.kde.KDiff3
 org.keepassxc.keepassxc
 org.mozilla.betterbird
