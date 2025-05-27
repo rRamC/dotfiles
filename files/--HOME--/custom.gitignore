@@ -28,6 +28,7 @@
 .psqlrc
 .pub-cache/
 .pylint.d/
+k8s-objects/
 .rd/
 .swiftpm/
 .talisman/bin/
@@ -64,7 +65,9 @@
 /.CFUserTextEncoding
 /.chef
 /.clamtk
+/.claude*
 /.codetogether/team-settings.txt
+/.codeium/
 /.colima/
 /.config/caffeine/log
 /.config/coc/extensions/package.json
@@ -75,6 +78,7 @@
 /.config/gatsby/events.json
 /.config/gatsby/sites/
 /.config/git/gitk
+/.config/github-copilot/
 /.config/iterm2/AppSupport
 /.config/jgit/config
 /.config/nvim/autoload/plug.vim
@@ -92,6 +96,7 @@
 /.continue/sessions
 /.ctsystem
 /.cups/
+/.cursor/
 /.cvecheck/cvecheck-runtime.properties
 /.dmrc
 /.dotfiles/
@@ -106,6 +111,7 @@
 /.fig/
 /.fontconfig
 /.freemind
+/.gemini
 /.gem/
 /.Genymobile
 /.gi_list
@@ -149,6 +155,7 @@
 /.packer.d/
 /.parallel
 /.passenger/
+/.pgadmin/
 /.pki
 /.pnpm-state/pnpm-state.json
 /.pnpm-store/
@@ -175,6 +182,7 @@
 /.terminfo/
 /.testcontainers.properties
 /.thumbnails
+/.tig_history
 /.tldrc/
 /.tmux
 /.tooling/gradle/checksums/
@@ -184,9 +192,11 @@
 /.v8flags*
 /.vagrant.d
 /.viminfo
+/.vim/bundle/vim-better-whitespace
 /.vpython*
 /.vscod*
 /.wget-hsts
+/.windsurf
 /.xsession-errors*
 /.yahoorc
 /.yarn/berry/telemetry.json
@@ -215,6 +225,7 @@
 /mbox
 /Movies/
 /Music/
+/nltk_data/
 /OWASP-Dependency-Check/data
 /Parallels
 /personal/*/profiles/
@@ -288,6 +299,7 @@ tmp/
 /.terraformrc
 /.vim/autoload/plug.vim
 /.vimrc
+/.yarn
 /.zlogin
 /.zshenv
 /.zshrc

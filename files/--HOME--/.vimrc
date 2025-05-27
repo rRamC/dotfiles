@@ -1,4 +1,5 @@
 " file location: ${HOME}/.vimrc
+execute pathogen#infect()
 
 set nocompatible              " be iMproved, required
 " filetype off                  " required
@@ -83,6 +84,11 @@ function! <SID>StripTrailingWhitespaces()
   call cursor(l, c)
 endfunction
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
+colorscheme monokai
+
+set colorcolumn=80,100,120
+highlight ColorColumn ctermbg=DarkGray guibg=DarkGray
 
 set history=500
 set autoindent
